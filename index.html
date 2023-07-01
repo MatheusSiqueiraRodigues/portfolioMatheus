@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Matheus</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: royalblue;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content:center;/*menu centralizado*/
+            gap: 20px;
+        }
+
+        .imagem_matheus {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            color: royalblue;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid royalblue 1px;
+        }
+
+        li{
+            float: left;
+        }
+
+        a:hover {
+            background-color: royalblue;
+            color: white;
+        }
+
+        /* media query apenas para mobile */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_matheus {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio de Matheus</h1>
+        <br>
+        
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="Sobremim.html">Sobre Mim</a></li>
+            <li><a href="Formacaoeducacional.html">Formação Educacional</a></li>
+            <li><a href="Portfolio.html">Portfólio</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_matheus">
+            <img src="IMGperfil.jpg">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Empresário</p>
+                <p>
+                    <strong> Data do Nascimento:</strong>
+                    22/06/1992
+                </p>
+                
+            </div>
+            
+        </aside>
+        <section class="principal">
+            <h1> 
+                Matheus Siqueira
+            </h1>
+            <p> Olá! Seja bem vindo ao meu Portifólio. 
+
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido para graduação </h1>
+    </footer>
+    </div>
+    
+</body>
+</html>
